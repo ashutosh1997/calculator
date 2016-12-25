@@ -5,21 +5,18 @@ import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Spannable;
 import android.text.style.ForegroundColorSpan;
-import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 import java.math.BigDecimal;
 
 
@@ -340,61 +337,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     EditText display = (EditText) findViewById(R.id.display);
                     String total="0";
-                    /*char c;
-                    String temp="0";
-                    int flag=0;
 
-                    if ((s.contains("+")||s.contains("-")||s.contains("x")||s.contains("÷")) && s.length()>0)
-                    {
-                        for (int i = 0; i < s.length(); i++) {
-                            c = s.charAt(i);
-                            if (c!='+' && c!='-' && c!='x' && c!='÷') {
-                                temp = temp + c;
-                                if (i==s.length()-1) {
-                                    total = calculate(flag, total, temp);
-                                    temp = "0";
-                                }
-                            }
-                            else if(c=='+' || c=='-' || c=='x' || c=='÷') {
-                                if(i==0) {
-                                    if (c == '+') {
-                                        flag = 1;
-                                    } else if (c == '-') {
-                                        flag = 2;
-                                    } else if (c == 'x') {
-                                        flag = 3;
-                                    } else if (c == '÷') {
-                                        flag = 4;
-                                    }
-                                }
-                                if (i>0){
-                                    total = calculate(flag, total, temp);
-                                    temp = "0";
-                                    if (c == '+') {
-                                        flag = 1;
-                                    } else if (c == '-') {
-                                        flag = 2;
-                                    } else if (c == 'x') {
-                                        flag = 3;
-                                    } else if (c == '÷') {
-                                        flag = 4;
-                                    }
-                                }
-                            }
-                        }
-                        display.setText(s + "\n=" + total, TextView.BufferType.SPANNABLE);
-                        Spannable span = (Spannable)display.getText();
-                        int start = s.length();
-                        int end = start + total.length() +2;
-                        span.setSpan(new ForegroundColorSpan(Color.rgb(215,120,0)), start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-                        if (total=="Error")
-                        {
-                            s="";
-                        }
-                        else
-                        s = total;
-                    }
-                    */
 
                     InToPos p = new InToPos();
                     Evaluate eval = new Evaluate();

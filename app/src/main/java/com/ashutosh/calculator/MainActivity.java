@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Button advanced = (Button) findViewById(R.id.advanced);
-        //Button basic = (Button) findViewById(R.id.basic);
         Button orient = (Button) findViewById(R.id.orient);
         Button one = (Button)findViewById(R.id.one);
         Button two = (Button)findViewById(R.id.two);
@@ -456,10 +454,6 @@ public class MainActivity extends AppCompatActivity {
         return x1;
     }
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-    }
 
     @Override
     public void onBackPressed() {
